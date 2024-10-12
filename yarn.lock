@@ -6118,8 +6118,10 @@ multihashes@^4.0.1, multihashes@^4.0.2:
   version "0.0.0"
   resolved "file:"
   dependencies:
+    "@thirdweb-dev/react" "^4.9.4"
+    "@thirdweb-dev/sdk" "^4.0.99"
     dotenv "^16.4.5"
-    ethers "^6.13.2"
+    ethers "^5.7.2"
     myapp "file:"
     react "^18.3"
     react-dom "^18.3"

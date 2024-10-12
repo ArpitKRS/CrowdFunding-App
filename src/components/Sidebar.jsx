@@ -16,6 +16,7 @@ const Icon = ({styles, name, imgUrl, isActive, disabled, handleClick}) => (
 const Sidebar = () => {
   const navigate = useNavigate();
   const [isActive, setIsActive] = useState('dashboard');
+  const [isDarkMode, setIsDarkMode] = useState(true)
   return (
     <div className="flex justify-between items-center flex-col sticky top-5 h-[93vh]">
       <Link to="/">
@@ -37,7 +38,7 @@ const Sidebar = () => {
             />
           ))}
         </div>
-        <Icon styles="bg-[#1c1c24] shadow-secondary" imgUrl={sun}/>
+        {/* <Icon styles="bg-[#1c1c24] shadow-secondary" imgUrl={sun}/> */}
       </div>
     </div>
   )
